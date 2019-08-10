@@ -1,0 +1,28 @@
+.jumbotron {
+    background-image: url(../assets/images/sunny-train-station.jpg);
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin-top: 10px;
+    border: 2px groove rgb(36, 126, 243);
+    color: #F2A950;
+    text-shadow: 2px 2px black;
+}
+
+.panel-body {
+    background-image: url(../assets/images/sunny-train-station.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: #F2A950;
+    text-shadow: 2px 2px black;
+}
+
+body {
+    background-color: #26251A;
+}
+
+
+
+
