@@ -3,44 +3,40 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <title>Train Scheduler</title>
-
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <!-- Custom CSS file -->
-  <link rel="stylesheet" href="assets/style.css">
-
-  <!-- Firebase Reference -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
-
-  <!-- Moment.js Reference! -->
-  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <!-- Moment.js Reference! -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 </head>
 
 <body>
 
-  <!-- Div containing the entire page -->
+  <!-- Container for the entire page -->
   <div class="container">
 
-    <!-- Header for page -->
+    <!-- Main Header -->
     <div class="jumbotron">
       <div class="row">
-        <div class="col-md-12">
-        </div>
+        <div class="col-md-12"></div>
       </div>
+      
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-center"><strong>Train Scheduler</strong></h1>
         </div>
       </div>
+      
       <div class="row">
         <div class="col-md-12">
           <h3 class="text-center">An up-to-date train information table/scheduler</h3>
@@ -48,20 +44,15 @@
       </div>
     </div>
 
-    <!-- Contains both tables on page -->
     <div class="row">
-
       <div class="col-md-12">
-
         <!-- Current scheduled trains -->
         <div class="panel panel-primary">
-
-          <!-- Current train table header -->
+          <!-- Table header -->
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
           </div>
 
-          <!-- Current train table content -->
           <div class="panel-body">
             <table class="table table-hover" id="train-table">
               <thead>
@@ -69,28 +60,23 @@
                   <th>Train Name</th>
                   <th>Destination</th>
                   <th>Frequency (minutes)</th>
-                  <th>Next Arrival</th>
-                  <th>Minutes Away</th>
+                  <th>Next Arrival Time</th>
+                  <th>Minutes Until Next Arrival</th>
                 </tr>
               </thead>
               <tbody>
               </tbody>
             </table>
           </div>
-
         </div>
 
         <!-- Add a new train -->
         <div class="panel panel-primary">
-
-          <!-- Add a new train table header -->
+          <!-- Table header -->
           <div class="panel-heading">
-            <h3 class="panel-title"><strong>Add a Train</strong></h3>
+            <h3 class="panel-title"><strong>Add another Train</strong></h3>
           </div>
-
-          <!-- Add a new train table content -->
           <div class="panel-body">
-
             <!-- Form that takes the user input for new trains -->
             <form>
               <div class="form-group">
@@ -111,21 +97,13 @@
               </div>
               <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
             </form>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
   <!-- Link to the external JavaScript -->
   <script type="text/javascript" src="assets/app.js"></script>
-
 </body>
-
 
 </html>
